@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
@@ -7,6 +8,12 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "public"),
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      filename: 'index.html',
+      template: './src/index.html',
+    })],
   module: {
     rules: [
       {
@@ -52,10 +59,18 @@ module.exports = {
 
 module.exports = {
   mode: 'production',
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: {
+    main: path.join(__dirname, "src", "index.js"),
+  },
   output: {
     path:path.resolve(__dirname, "public"),
+    filename: '[name].js'
   },
+  plugins: [new HtmlWebpackPlugin({
+    inject: 'body',
+    filename: 'index.html',
+    template: './src/index.html',
+  })],
   module: {
     rules: [
       {
@@ -84,15 +99,5 @@ module.exports = {
         ]
     }
     ]
-  },
-  devtool: "eval-cheap-module-source-map",
-  devServer: {
-    // [static] config for how what to serve
-    static: {
-      directory: path.join(__dirname, "public"),
-    },
-    compress: true,
-    // [port] what port on our local machine to run the dev server
-    port: 3000,
-  },
+  }
 };

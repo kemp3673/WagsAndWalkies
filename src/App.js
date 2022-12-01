@@ -1,13 +1,13 @@
 import React from 'react';
-import { BackgroundImage } from './mainStyles';
-import underConstruction from '../images/underConstruction.jpg';
+import { BrowserRouter as Router} from "react-router-dom";
+import Home from "./pages";
 
 
 function App() {
   return (
-    <div className="App">
-      <BackgroundImage src={underConstruction} alt="Wags and Walkies Coming Soon" style={{}}/>
-    </div>
+    <Router>
+      <Home />
+    </Router>
   );
 }
 

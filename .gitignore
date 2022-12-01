@@ -3,6 +3,7 @@
 .pem
 resume.pem
 
+
 # dependencies
 /node_modules
 /.pnp
@@ -13,6 +14,7 @@ resume.pem
 
 # production
 /build
+/public
 
 # misc
 .DS_Store
