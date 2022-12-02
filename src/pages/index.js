@@ -22,6 +22,8 @@ const Home = () => {
   const toggleModal = () => {
       setShowModal(current => !current);
   };
+  //TODO Add scroll animations to application
+  //TODO Add SVG wave to background once color is selected ... https://www.shapedivider.app/
 
   return (
     <>
@@ -29,14 +31,12 @@ const Home = () => {
       <NavBar toggle={toggle}/>
       <Splash />
       <Attribution toggleModal={ toggleModal }  showModal={ showModal }/>
-      {/*
       <Services />
       <Pricing />
       <About />
       <Testimonials />
       <Contact />
-      */}
-      <Footer class="hidden" toggleModal={ toggleModal }/>
+      <Footer toggleModal={ toggleModal }/>
     </>
   );
 }

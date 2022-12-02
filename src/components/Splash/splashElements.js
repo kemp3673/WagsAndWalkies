@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
-
 export const SplashContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0 30px;
   height: fit-content;
-  min-height: 90vh;
+  min-height: 92vh;
   position: relative;
   z-index: 3;
   background: #E0D8B4;
@@ -26,6 +24,7 @@ export const SplashContent = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -36,7 +35,7 @@ export const SplashH1 = styled.h1`
   color: #373F41;
   font-size: 40px;
   text-align: left;
-  padding-right: 20px;
+  padding: 0 20px;
 
   @media screen and (max-width: 768px) {
     font-size: 38px;
@@ -56,7 +55,7 @@ export const SplashP = styled.p`
   text-align: left;
   max-width: 800px;
   height: fit-content;
-  padding-right: 20px;
+  padding: 0 20px;
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
@@ -68,19 +67,40 @@ export const SplashP = styled.p`
   }
 `;
 
+export const SplashPSocial = styled.p `
+  margin-top: 24px;
+  color: #373F41;
+  font-size: 1.2em;
+  max-width: 800px;
+  height: fit-content;
+  padding-right: 20px;
+  paddingTop: 30px;
+  margin-left: 80px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    margin-left: 0px;
+    padding-right: 0;
+    text-align: center;
+  }
+`;
+
 export const SplashImage = styled.img`
   right: 0;
   width: 50vw;
   max-width: 750px;
-  height: 90vh;
+  height: 92vh;
+  box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
   object-fit: cover;
   object-position: left;
   overflow: hidden;
+  /* margin: -10px; */
+  border-radius: 5px;
 
   @media screen and (max-width: 768px) {
     width: 100vw;
     height: 400px;
-    padding-top: 20px;
+    margin-top: 20px;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
@@ -94,10 +114,12 @@ export const SplashLogo = styled.div`
   font-size: 3rem;
   margin-top: 24px;
   max-width: 1000px;
-  margin-left: 65px;
+  margin-left: 95px;
+  filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.4));
 
   @media screen and (max-width: 768px) {
     justify-content: center;
+    margin-left: 0;
   }
 `;
 

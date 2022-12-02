@@ -18,6 +18,7 @@ const NavBar = ({ toggle }) => {
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
+    // eslint-disable-next-line no-restricted-globals
     if (prevScrollpos < currentScrollPos && (screen.width <= 768 || navigator.maxTouchPoints)) {
       document.getElementById("navbar").style.top = "-80px";
     } else {
@@ -32,7 +33,7 @@ const NavBar = ({ toggle }) => {
         <NavBarContainer>
           <NavLogo
             to='/'
-            smooth={false}
+            smooth={true}
             spy={true}
             duration={500}
             exact='true'
@@ -46,45 +47,45 @@ const NavBar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
-                // aria-label="Education Link"
-                // to="education"
-                // smooth={false}
-                // spy={true}
-                // duration={500}
-                // exact='true'
+                aria-label="Services Link"
+                to="services"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact='true'
                 offset={-80}
               >Services</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                // aria-label="Experience Link"
-                // to="experience"
-                // smooth={false}
-                // spy={true}
-                // duration={500}
-                // exact='true'
+                aria-label="Pricing Link"
+                to="pricing"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact='true'
                 offset={-80}
               >Pricing</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                // aria-label="Employment Link"
-                // to="employmentHistory"
-                // smooth={false}
-                // spy={true}
-                // duration={500}
-                // exact='true'
+                aria-label="About Us Link"
+                to="about"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact='true'
                 offset={-80}
               >About Us</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                // aria-label="Employment Link"
-                // to="employmentHistory"
-                // smooth={false}
-                // spy={true}
-                // duration={500}
-                // exact='true'
+                aria-label="Testimonials Link"
+                to="testimonials"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact='true'
                 offset={-80}
               >Testimonials</NavLinks>
             </NavItem>

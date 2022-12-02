@@ -8,12 +8,12 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "public"),
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      inject: 'body',
-      filename: 'index.html',
-      template: './src/index.html',
-    })],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     //ANCHOR inject: 'body',
+  //     filename: 'index.html',
+  //     template: './src/index.html',
+  //   })],
   module: {
     rules: [
       {
@@ -66,11 +66,11 @@ module.exports = {
     path:path.resolve(__dirname, "public"),
     filename: '[name].js'
   },
-  plugins: [new HtmlWebpackPlugin({
-    inject: 'body',
-    filename: 'index.html',
-    template: './src/index.html',
-  })],
+  // plugins: [new HtmlWebpackPlugin({
+  //   //ANCHOR inject: 'body',
+  //   filename: 'index.html',
+  //   template: './src/index.html',
+  // })],
   module: {
     rules: [
       {

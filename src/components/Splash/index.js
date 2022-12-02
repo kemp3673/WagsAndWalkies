@@ -1,5 +1,5 @@
 import React from 'react';
-import { SplashContainer, SplashContent, SplashH1, SplashP, SplashImage, SplashLogo, SplashLink } from './splashElements';
+import { SplashContainer, SplashContent, SplashH1, SplashP, SplashImage, SplashLogo, SplashLink, SplashPSocial } from './splashElements';
 import MainImage from '../../images/pageImages/MainImage.jpeg';
 import { BsFacebook } from 'react-icons/bs';
 import { FaTiktok } from 'react-icons/fa';
@@ -15,13 +15,16 @@ const Splash = () => {
         <SplashP>
         Whether your energetic lab needs some extra walks or you need someone to feed and snuggle with your tabby cat while you are away, Wags and Walkies is here to help!
         </SplashP>
-        <br/>
-        <SplashP style={{paddingTop: "30px", marginLeft: "50px"}}>
-        Follow us on social media!
+        <SplashP>
+        Happily serving the Kirkwood Place community in Clarksville, TN.
         </SplashP>
+        <br/>
+        <SplashPSocial>
+        Follow us on social media!
+        </SplashPSocial>
         <SplashLogo>
           <SplashLink aria-label="TikTok Link" href="https://www.tiktok.com/@saoirsethegolden?_t=8XnUf2MCO3G&_r=1" target="_blank"><FaTiktok /></SplashLink>
-          <SplashLink aria-label="FaceBook Link" href="" target="_blank"><BsFacebook /></SplashLink>
+          <SplashLink aria-label="FaceBook Link" href="https://www.facebook.com/profile.php?id=100086704342624&mibextid=ZbWKwL" target="_blank"><BsFacebook /></SplashLink>
         </SplashLogo>
         </div>
         <div>

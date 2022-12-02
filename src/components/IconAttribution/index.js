@@ -21,6 +21,8 @@ import Food from "../../images/icons/food_bowl.png";
 import HomeIcon from "../../images/icons/home.png";
 import Paw from "../../images/icons/pawPrint.png";
 import Training from "../../images/icons/training.png";
+import TabIcon from "../../images/icons/paw_icon.png";
+import SendingDots from '../../images/icons/ellipse-dots.gif';
 
 const Attribution = ({ toggleModal, showModal }) => {
   const handleModalClose = (e) => {
@@ -47,32 +49,40 @@ const Attribution = ({ toggleModal, showModal }) => {
                 <AttributionList>
                   {/* Make li named component and tell it to flex row to get the icon and text next to each other. */}
                   <li>
+                    <AttributionListIcon src={TabIcon} alt="Tab Icon"/>
+                    <p>Created by Freepik from flaticon.com</p>
+                  </li>
+                  <li>
                     <AttributionListIcon src={Ball} alt="Ball Icon" />
-                    <p>created by Sami from thenounproject.com</p>
+                    <p>Created by Sami from thenounproject.com</p>
                   </li>
                   <li>
                     <AttributionListIcon src={Bath} alt="Bath Icon" />
-                    <p>created by Made from thenounproject.com</p>
+                    <p>Created by Made from thenounproject.com</p>
                   </li>
                   <li>
                     <AttributionListIcon src={Walking} alt="Walking Icon" />
-                    <p>created by DT. Creative Lab from thenounproject.com</p>
+                    <p>Created by DT. Creative Lab from thenounproject.com</p>
                   </li>
                   <li>
                     <AttributionListIcon src={HomeIcon} alt="Home Icon" />
-                    <p>created by vlodimer from thenounproject.com</p>
+                    <p>Created by vlodimer from thenounproject.com</p>
                   </li>
                   <li>
                     <AttributionListIcon src={Food} alt="Food Icon" />
-                    <p>created by Andre Buand from thenounproject.com</p>
+                    <p>Created by Andre Buand from thenounproject.com</p>
                   </li>
                   <li>
                     <AttributionListIcon src={Paw} alt="Paw Icon" />
-                    <p>created by Nico Bökenkröger from thenounproject.com</p>
+                    <p>Created by Nico Bökenkröger from thenounproject.com</p>
                   </li>
                   <li>
                     <AttributionListIcon src={Training} alt="Training Icon" />
-                    <p>created by Delsart Olivia from thenounproject.com</p>
+                    <p>Created by Delsart Olivia from thenounproject.com</p>
+                  </li>
+                  <li>
+                    <AttributionListIcon src={SendingDots} alt="Dots Animated Icon" />
+                    <p>Created by Sobamachine from tenor.com</p>
                   </li>
                 </AttributionList>
               </AttributionModalBody>
