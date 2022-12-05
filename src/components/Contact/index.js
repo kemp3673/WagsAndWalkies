@@ -15,6 +15,7 @@ import {
   ContactInput,
   ContactMessage,
   ContactChars,
+  ContactError,
 } from "./contactElements";
 
 const Contact = () => {
@@ -31,7 +32,7 @@ const Contact = () => {
     phone: "",
   };
   const [formValues, setFormValues] = useState(formDefault);
-  const [formFilled, setFormFilled] = useState(false);
+  const [formErrors, setFormErrors] = useState([]);
 
   //Update textArea Height to allow for vertical scaling of text area
   useEffect(() => {
@@ -71,6 +72,7 @@ const Contact = () => {
                   handleChange(e);
                 }}
               />
+              {formErrors.name ? <ContactError>{formErrors.name}</ContactError> : null}
               <ContactLabel>Last Name</ContactLabel>
               <ContactInput
                 type="text"
@@ -93,6 +95,7 @@ const Contact = () => {
                   handleChange(e);
                 }}
               />
+              {formErrors.email ? <ContactError>{formErrors.email}</ContactError> : null}
               <ContactLabel>Phone</ContactLabel>
               <PhoneInput
                 className="phone"
@@ -118,11 +121,12 @@ const Contact = () => {
                   handleChange(e);
                 }}
               />
+              {formErrors.message ? <ContactError>{formErrors.message}</ContactError> : null}
               <ContactChars>Characters Remaining: {500 - formValues.message.length}/500</ContactChars>
             </ContactForm>
           </ContactWrapper>
           <ContactWrapper>
-            <ContactButton formFilled={formFilled} formValues={formValues} />
+            <ContactButton formValues={formValues} setFormErrors={setFormErrors}/>
           </ContactWrapper>
         </ContactContent>
       </ContactContainer>

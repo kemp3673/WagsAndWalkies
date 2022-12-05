@@ -65,7 +65,6 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -15px;
-  margin-top: 1rem;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -82,14 +81,14 @@ export const NavLinks = styled(LinkS)`
   font-size: 1.5rem;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 75px;
   cursor: pointer;
   &:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
   }
   &.active {
-    border-bottom: 3px solid #01bfaf;
+    border-bottom: 5px solid #01bfaf;
   }
 `;
 

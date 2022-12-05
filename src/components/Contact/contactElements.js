@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 export const ContactContainer = styled.div`
   align-items: center;
   height: fit-content;
   position: relative;
   z-index: 3;
-  padding-bottom: 0;
+  padding: 20px 0 20px 0;
   :before {
     content: "";
     position: absolute;
@@ -21,8 +22,7 @@ export const ContactContainer = styled.div`
 export const ContactContent = styled.div`
   height: fit-content;
   border-radius: 12px;
-  padding-top: 20px;
-  bottom: 20px;
+  padding: 20px 0 0 0;
   margin: 0 auto;
   z-index: 2;
   position: relative;
@@ -68,7 +68,6 @@ export const ContactTitle = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
-
 `;
 
 export const ContactForm = styled.form`
@@ -121,7 +120,7 @@ export const ContactInput = styled.input`
   }
 `;
 
-  export const ContactMessage = styled.textarea`
+export const ContactMessage = styled.textarea`
   width: 350px;
   min-height: 50px;
   box-sizing: border-box;
@@ -145,8 +144,9 @@ export const ContactInput = styled.input`
   @media screen and (max-width: 480px) {
     font-size: 12px;
   }
-  `;
+`;
 
+//TODO Add hover attribute
 export const SendButton = styled.button`
   border: none;
   outline: none;
@@ -158,38 +158,39 @@ export const SendButton = styled.button`
   border-radius: 8px;
   font-size: 21px;
   cursor: pointer;
-  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, .2);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
   :active {
     transform: translateY(3px);
   }
 `;
 
+//TODO just a hair to much height to match other buttons
 export const SuccessButton = styled.button`
   border: none;
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #41DF2B; /*TODO update color*/
+  background-color: #41df2b; /*TODO update color*/
   color: #373f41;
   position: relative;
   border-radius: 8px;
   font-size: 21px;
-  cursor: pointer;
-  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, .2);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
 export const SendingButton = styled.button`
   border: none;
   outline: none;
   width: 150px;
-  padding: 10px;
-  background-color: #23B655; /*TODO update color*/
+  padding: 10px 10px 10px 0;
+  padding-left: 15px;
+  text-align: left;
+  background-color: #23b655; /*TODO update color*/
   color: #373f41;
   position: relative;
   border-radius: 8px;
   font-size: 21px;
-  cursor: pointer;
-  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, .2);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
 export const SendingImg = styled.img`
@@ -202,12 +203,61 @@ export const ContactError = styled.p`
   padding: 10px;
   margin: 10px;
   color: red;
-  font-size: 21px;
+  font-size: 16px;
   width: 80%;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const ContactChars = styled.span`
-  font-size: 10px;
+  font-size: 12px;
   color: #373f41;
+`;
+
+
+const DotTypingAnimation = keyframes`
+  0% {
+    box-shadow: 9984px 0 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px 0 0 0 #373f41;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px 0 0 0 #373f41;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px 0 0 0 #373f41;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #373f41, 9999px -10px 0 0 #373f41, 10014px 0 0 0 #373f41;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px 0 0 0 #373f41;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px -10px 0 0 #373f41;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px 0 0 0 #373f41;
+  }
+`;
+
+export const DotTyping = styled.div`
+  position: relative;
+  left: -9999px;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #373f41;
+  color: #373f41;
+  box-shadow: 9984px 0 0 0 #373f41, 9999px 0 0 0 #373f41, 10014px 0 0 0 #373f41;
+  animation-name: ${DotTypingAnimation};
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+`;
+
+export const AnimationWrapper = styled.div`
+  position: absolute;
+  left: 115px;
+  bottom: 15px;
 `;

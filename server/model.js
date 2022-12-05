@@ -14,12 +14,13 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendEmail = (req, res) => {
-  const { name, email, message } = req.body;
+  console.log(req.body);
+  const { firstName, lastName, phone, email, message } = req.body;
   const mailOptions = {
     from: email,
     to: process.env.EMAIL,
-    subject: `Message from ${name}`,
-    text: message + " SENT FROM: " + email
+    subject: `New Client Inquiry from ${firstName} ${lastName}`,
+    text: `${message} \n \n Sent from ${firstName} ${lastName} \n Phone: ${phone} \n Email: ${email}`
   };
   transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
