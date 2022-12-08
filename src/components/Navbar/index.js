@@ -11,15 +11,12 @@ const NavBar = ({ toggle }) => {
     });
   };
 
-  /*
-  < navigator.maxTouchPoints > is being used to check for mobile device as just pixel width is not enough when the device is in landscape mode. The reason I did not do this for the entire app is that from what I have gathered touch devices like some laptops and all-in-ones will report back as touch devices which will give a mobile view. Figure for all touch devices a hiding nav bar is not a bad idea.
-  */
-
+  // Check if scrolling down/up and hide/show navbar accordingly
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     // eslint-disable-next-line no-restricted-globals
-    if (prevScrollpos < currentScrollPos && (screen.width <= 768 || navigator.maxTouchPoints)) {
+    if (prevScrollpos < currentScrollPos) {
       document.getElementById("navbar").style.top = "-80px";
     } else {
       document.getElementById("navbar").style.top = "0";
@@ -53,7 +50,7 @@ const NavBar = ({ toggle }) => {
                 spy={true}
                 duration={500}
                 exact='true'
-                offset={-80}
+                // offset={-80}
               >Services</NavLinks>
             </NavItem>
             <NavItem>
@@ -64,7 +61,7 @@ const NavBar = ({ toggle }) => {
                 spy={true}
                 duration={500}
                 exact='true'
-                offset={-80}
+                // offset={-80}
               >Pricing</NavLinks>
             </NavItem>
             <NavItem>
@@ -75,7 +72,7 @@ const NavBar = ({ toggle }) => {
                 spy={true}
                 duration={500}
                 exact='true'
-                offset={-80}
+                // offset={-80}
               >About Us</NavLinks>
             </NavItem>
             <NavItem>
@@ -86,7 +83,7 @@ const NavBar = ({ toggle }) => {
                 spy={true}
                 duration={500}
                 exact='true'
-                offset={-80}
+                // offset={-80}
               >Testimonials</NavLinks>
             </NavItem>
           </NavMenu>

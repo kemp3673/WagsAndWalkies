@@ -22,7 +22,6 @@ import HomeIcon from "../../images/icons/home.png";
 import Paw from "../../images/icons/pawPrint.png";
 import Training from "../../images/icons/training.png";
 import TabIcon from "../../images/icons/paw_icon.png";
-import SendingDots from '../../images/icons/ellipse-dots.gif';
 
 const Attribution = ({ toggleModal, showModal }) => {
   const handleModalClose = (e) => {
@@ -79,10 +78,6 @@ const Attribution = ({ toggleModal, showModal }) => {
                   <li>
                     <AttributionListIcon src={Training} alt="Training Icon" />
                     <p>Created by Delsart Olivia from thenounproject.com</p>
-                  </li>
-                  <li>
-                    <AttributionListIcon src={SendingDots} alt="Dots Animated Icon" />
-                    <p>Created by Sobamachine from tenor.com</p>
                   </li>
                 </AttributionList>
               </AttributionModalBody>

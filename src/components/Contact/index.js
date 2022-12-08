@@ -24,6 +24,7 @@ const Contact = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  // Declaration of state values
   const formDefault = {
     message: "",
     firstName: "",
@@ -34,7 +35,7 @@ const Contact = () => {
   const [formValues, setFormValues] = useState(formDefault);
   const [formErrors, setFormErrors] = useState([]);
 
-  //Update textArea Height to allow for vertical scaling of text area
+  //Updates textArea Height to allow for vertical scaling of text area
   useEffect(() => {
     const textField = document.getElementById("message");
     if (formValues.message.length > 1) {
@@ -44,7 +45,7 @@ const Contact = () => {
     }
   }, [formValues.message])
 
-  // Update form values from inputs
+  // Updates form values from inputs
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });

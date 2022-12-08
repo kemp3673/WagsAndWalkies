@@ -152,7 +152,7 @@ export const SendButton = styled.button`
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #048c7f; /*TODO update color*/
+  background-color: #5C7B7D; /*TODO update color*/
   color: #fff;
   position: relative;
   border-radius: 8px;
@@ -170,7 +170,7 @@ export const SuccessButton = styled.button`
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #41df2b; /*TODO update color*/
+  background-color: #C1D8D6; /*TODO update color*/
   color: #373f41;
   position: relative;
   border-radius: 8px;
@@ -185,7 +185,7 @@ export const SendingButton = styled.button`
   padding: 10px 10px 10px 0;
   padding-left: 15px;
   text-align: left;
-  background-color: #23b655; /*TODO update color*/
+  background-color: #82B3A4; /*TODO update color*/
   color: #373f41;
   position: relative;
   border-radius: 8px;

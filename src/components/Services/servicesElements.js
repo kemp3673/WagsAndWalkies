@@ -14,7 +14,7 @@ export const ServicesContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #EDE5DB;
+    background: #EFF2F1;
     z-index: 1;
   }
 `;
@@ -31,7 +31,7 @@ export const ServicesContent = styled.div`
 `;
 
 export const ServicesH1 = styled.h1`
-  color: #373F41;
+  color: #5C7B7D;
   width: 30vw;
   font-size: 48px;
   text-align: center;

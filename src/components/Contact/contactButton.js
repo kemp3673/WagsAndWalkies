@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import {
   SendButton,
@@ -19,14 +19,14 @@ const ContactButton = ({ formValues, setFormErrors }) => {
 
   //TODO Create function that when SENT is clicked, empties form values and reset states and button
 
-  const handleSend = () => {
+  const handleSend = useCallback(() => {
     console.log(formValues);
     let errors = validator(formValues);
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
       setCanSend(true);
     }
-  };
+  }, [formValues, setFormErrors]);
 
   useEffect(() => {
     if (handleSubmit) {
@@ -35,8 +35,7 @@ const ContactButton = ({ formValues, setFormErrors }) => {
       }, 5000)
       handleSend();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [handleSubmit])
+  }, [handleSubmit, handleSend])
 
   const conditionalButtons = [
     <SendButton onClick={() => setHandleSubmit(true)}>Send</SendButton>,

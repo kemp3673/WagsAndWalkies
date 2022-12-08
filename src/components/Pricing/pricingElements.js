@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PricingContainer = styled.div`
   align-items: center;
-  height: fit-content;
+  height: 50vh;
   position: relative;
   z-index: 3;
   padding-bottom: 0;
@@ -13,7 +13,7 @@ export const PricingContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #EDE5DB;
+    background: #FAEFE9;
     z-index: 1;
   }
 `;
@@ -39,7 +39,7 @@ export const PricingContent = styled.div`
 `;
 
 export const PricingH1 = styled.h1`
-  color: #373f41;
+  color: #5C7B7D;
   width: 200px;
   font-size: 48px;
   text-align: center;
