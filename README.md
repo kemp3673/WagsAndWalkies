@@ -66,11 +66,14 @@ _Below is an example of how you can instruct your audience on installing and set
    EMAIL = '<Email address you wish to receive message to>'
    PASSWORD = '<Google App Password>'
    ```
- 7. Update src/images with any images you wish to use. 
+ 7. Update src/images with any images you wish to use. (Images used are commerically licensed stock images with the exception of testimonial images which are customer provided. See "Testimonial" component for attributions of icons and image comments for attributions of background images).
     - pageImages contains main site images such a waves and backgrounds. 
     - icons contains all the icons files used across the site.
     - testimonials contains dog images that are used for tesimonial component
+    
  8. Update links in footer to relevant Facebook/TikTok if applicable, otherwise replace/remove.
+
+
 
 <!-- SCREENSHOTS -->
 ### Screenshots
