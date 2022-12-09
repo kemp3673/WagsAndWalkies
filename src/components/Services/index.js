@@ -54,7 +54,7 @@ const Services = () => {
               <ServicesImage src={Ball} alt="Ball Image" />
               <ServicesTitle>Play Time</ServicesTitle>
               <ServicesP>
-              Play time can be done at either the dog park or in the grass on a 30 ft leash. A highly engaged Play session can be both mentally and physically tiring, and should leave your pup ready for a good nap once they get home! Play time can be combined with a walk or scheduled on its own.
+              Play time can be done at either the dog park or in the grass on a 30 ft leash. A highly engaged play session can be both mentally and physically tiring, and should leave your pup ready for a good nap once they get home! Play time can be combined with a walk or scheduled on its own.
               </ServicesP>
             </ServicesListItem>
             <ServicesListItem data-aos="fade-right">
