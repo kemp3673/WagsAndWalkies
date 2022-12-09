@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
+import ContactBackground from "../../images/pageImages/ContactBackground.jpg";
 
 
 // TODO fix mobile view form size. Currently it is offset due to form itself being too large.
@@ -16,8 +17,7 @@ export const ContactContainer = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: linear-gradient(black, black),
-      url("https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"); /* Image provided by okeyKat via Unsplash */
+    background-image: linear-gradient(white, black), url(${ContactBackground});
     background-blend-mode: saturation;
     background-size: cover;
     background-position: center;
@@ -29,7 +29,6 @@ export const ContactContainer = styled.div`
 export const ContactContent = styled.div`
   height: fit-content;
   border-radius: 12px;
-  //padding: 20px 0 0 0;
   margin: 0 auto;
   z-index: 2;
   position: relative;
@@ -37,9 +36,14 @@ export const ContactContent = styled.div`
   flex-direction: column;
   width: fit-content;
   justify-content: center;
-  background-color: white; /*TODO update color*/
+  background-color: white;
   @media screen and (max-width: 1009px) {
     flex-direction: column;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+    width: 90vw;
+    margin: 0 0;
   }
 `;
 
@@ -63,6 +67,7 @@ export const ContactTitle = styled.h1`
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #373f41;
+  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
@@ -84,7 +89,7 @@ export const ContactForm = styled.form`
   height: 100%;
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 60vw;
     padding: 20px;
   }
 `;
@@ -96,7 +101,7 @@ export const ContactLabel = styled.label`
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    width: 80vw;
+    width: 60vw;
     font-size: 16px;
   }
 
@@ -118,7 +123,7 @@ export const ContactInput = styled.input`
   @media screen and (max-width: 768px) {
     border-bottom: 1.5px solid #373f41;
     margin-left: 0;
-    width: 80vw;
+    width: 60vw;
     font-size: 14px;
   }
 
@@ -144,7 +149,7 @@ export const ContactMessage = styled.textarea`
   @media screen and (max-width: 768px) {
     border-bottom: 1.5px solid #373f41;
     margin-left: 0;
-    width: 80vw;
+    width: 60vw;
     font-size: 14px;
   }
 
@@ -215,7 +220,7 @@ export const ContactError = styled.p`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 0.8rem;
   }
 `;
 

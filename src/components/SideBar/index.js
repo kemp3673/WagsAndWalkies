@@ -56,17 +56,6 @@ const SideBar = ({ isOpen, toggle }) => {
                         Pricing
                     </SideBarLink>
                     <SideBarLink
-                        aria-label="About Us Link"
-                        to="about"
-                        onClick={toggle}
-                        smooth={true}
-                        spy={true}
-                        duration={500}
-                        exact='true'
-                    >
-                        About Us
-                    </SideBarLink>
-                    <SideBarLink
                         aria-label="Testimonials Link"
                         to="testimonials"
                         onClick={toggle}

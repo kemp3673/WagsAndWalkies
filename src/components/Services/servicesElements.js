@@ -66,7 +66,6 @@ export const ServicesList = styled.ul`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 14px;
     height: fit-content;
     width: 220px;
     margin: 5px;
@@ -84,26 +83,24 @@ export const ServicesListItem = styled.li`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    font-size: 18px;
     height: fit-content;
     width: 260px;
   }
 
   @media screen and (max-width: 480px) {
     flex-direction: column;
-    font-size: 14px;
     height: fit-content;
     width: 220px;
   }
 `;
 
 export const ServicesImage = styled.img`
-  max-height: 150px;
+  max-height: 120px;
   margin-bottom: -20px;
 `;
 
 export const ServicesTitle = styled.h2`
-  color: #373F41;
+  color: #5C7B7D;
   font-size: 22px;
   text-align: center;
   z-index: 3;
@@ -120,14 +117,10 @@ export const ServicesTitle = styled.h2`
 export const ServicesP = styled.p`
   margin-top: 4px;
   color: #373F41;
-  font-size: 20px;
-  text-align: justify; //TODO Change to center possibly if it looks weird with actual text
+  font-size: 16px;
+  text-align: justify;
 
   @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: 480px) {
     font-size: 14px;
   }
 `;

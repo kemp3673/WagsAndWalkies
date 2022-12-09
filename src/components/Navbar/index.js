@@ -64,7 +64,7 @@ const NavBar = ({ toggle }) => {
                 // offset={-80}
               >Pricing</NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 aria-label="About Us Link"
                 to="about"
@@ -74,7 +74,7 @@ const NavBar = ({ toggle }) => {
                 exact='true'
                 // offset={-80}
               >About Us</NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 aria-label="Testimonials Link"

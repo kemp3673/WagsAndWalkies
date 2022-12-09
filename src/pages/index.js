@@ -5,7 +5,6 @@ import Splash from '../components/Splash';
 import Services from '../components/Services';
 import Pricing from '../components/Pricing';
 import Contact from '../components/Contact';
-import About from '../components/About';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import Attribution from '../components/IconAttribution';
@@ -31,7 +30,6 @@ const Home = () => {
       <Attribution toggleModal={ toggleModal }  showModal={ showModal }/>
       <Services />
       <Pricing />
-      <About />
       <Testimonials />
       <Contact />
       <Footer toggleModal={ toggleModal }/>

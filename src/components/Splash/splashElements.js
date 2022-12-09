@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SplashBackground from "../../images/pageImages/SplashBackground.jpg";
 
 export const SplashContainer = styled.div`
   display: flex;
@@ -6,7 +7,8 @@ export const SplashContainer = styled.div`
   height: fit-content;
   position: relative;
   z-index: 3;
-  background-image: url("https://images.unsplash.com/photo-1593209923604-ee2be874ba53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); /* Image provided by Ivan Calderon via Unsplash */
+  background-image: url(${SplashBackground});
+  /* Image provided by Ivan Calderon via Unsplash */
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;

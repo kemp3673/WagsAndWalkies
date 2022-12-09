@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import WaveTransition from "../../images/pageImages/servicesToPrice.png";
+import AboutTransition from "../../images/pageImages/aboutToTestimonials.png";
 import {
   PricingContainer,
   PricingContent,
@@ -13,7 +14,7 @@ import {
   PricingDisclaimer,
   PricingWrapper,
   PricingBg,
-  AboutBg,
+  AboutToTestimonialBg,
 } from "./pricingElements";
 
 const Pricing = () => {
@@ -56,6 +57,7 @@ const Pricing = () => {
           </PricingList>
           </PricingWrapper>
         </PricingContent>
+        <AboutToTestimonialBg src={AboutTransition} alt="background"/>
       </PricingContainer>
 
     </>

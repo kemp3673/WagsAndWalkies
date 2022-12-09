@@ -14,7 +14,6 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendEmail = (req, res) => {
-  console.log(req.body);
   const { firstName, lastName, phone, email, message } = req.body;
   const mailOptions = {
     from: email,

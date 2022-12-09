@@ -13,7 +13,7 @@ export const PricingContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #FBB156;
+    background: #EAD6BD;
     z-index: 1;
   }
 `;
@@ -21,7 +21,6 @@ export const PricingContainer = styled.div`
 export const PricingWrapper = styled.div`
   height: fit-content;
   margin: 0 auto;
-  padding-top: 50px;
   z-index: 2;
 `;
 
@@ -34,9 +33,11 @@ export const PricingContent = styled.div`
   flex-direction: row;
   max-width: 1100px;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 120px;
   @media screen and (max-width: 1009px) {
     flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 `;
 
@@ -46,9 +47,11 @@ export const PricingH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   padding-top: 25px;
+  padding-left: 25px;
   z-index: 3;
 
   @media screen and (max-width: 768px) {
+    padding-left: 0;
     margin-left: 0;
     width: 100vw;
     font-size: 40px;
@@ -64,7 +67,7 @@ export const PricingDisclaimer = styled.p`
   color: #373f41;
   font-size: 10px;
   text-align: center;
-  padding-left: 10px;
+  padding-left: 35px;
   @media screen and (max-width: 768px) {
     font-size: 8px;
   }
@@ -159,11 +162,12 @@ export const PricingBg = styled.img`
   left: 0;
 `;
 
-export const AboutBg = styled.img`
+export const AboutToTestimonialBg = styled.img`
   z-index: 999;
   width: 100vw;
   max-height: 25%;
   position: absolute;
+  margin-bottom: -100px;
   bottom: 0;
   left: 0;
 `;
