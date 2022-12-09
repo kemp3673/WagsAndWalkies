@@ -1,13 +1,18 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import PriceToAbout from "../../images/pageImages/priceToAbout.png";
+import AboutTransition from "../../images/pageImages/aboutToTestimonials.png";
+import OwnerImg from "../../images/pageImages/Owner.jpeg";
 import {
   AboutContainer,
   AboutWrapper,
   AboutContent,
   AboutTitle,
   AboutP,
-  AboutImg
+  AboutImg,
+  AboutBg,
+  AboutToTestimonialBg,
 } from "./aboutElements";
 
 const About = () => {
@@ -19,6 +24,7 @@ const About = () => {
   return (
     <>
       <AboutContainer id="about">
+          <AboutBg src={PriceToAbout} alt="Transition image"/>
           <AboutContent data-aos="fade-right">
           <AboutWrapper>
             <AboutTitle>About Us</AboutTitle>
@@ -30,9 +36,10 @@ const About = () => {
               epicuri insolens eu nec, dicit virtute urbanitas id nam, qui in
               habeo semper eligendi.
             </AboutP>
-            <AboutImg src="https://c8.alamy.com/comp/T85B0N/happy-woman-dog-walker-with-dogs-enjoying-in-funny-walking-outdoors-T85B0N.jpg" alt="Owner and Dog"/>
             </AboutWrapper>
+            <AboutImg src={OwnerImg} alt="Owner and Dog"/>
           </AboutContent>
+          <AboutToTestimonialBg src={AboutTransition} alt="background"/>
       </AboutContainer>
     </>
   );

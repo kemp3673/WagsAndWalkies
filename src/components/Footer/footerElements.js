@@ -64,3 +64,21 @@ export const FooterExternalLink = styled.a`
   }
 `;
 
+export const FooterLogo = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  width: fit-content;
+`;
+
+export const FooterLink = styled.a`
+  color: #82B3A4;
+  margin: 0 8px;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.3);
+  }
+`;

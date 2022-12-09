@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
   z-index: 3;
-  padding-bottom: 0;
+  padding-bottom: 80px;
   :before {
     content: "";
     position: absolute;
@@ -32,6 +32,7 @@ export const AboutContent = styled.div`
   z-index: 2;
   position: relative;
   display: flex;
+  padding-top: 80px;
   flex-direction: row;
   max-width: 1100px;
   justify-content: center;
@@ -46,13 +47,12 @@ export const AboutTitle = styled.h1`
   font-size: 48px;
   text-align: center;
   z-index: 3;
-  padding-top: 60px;
+  padding-top: 80px;
 
   @media screen and (max-width: 768px) {
     margin-left: 0;
     width: 100vw;
     font-size: 40px;
-    padding-top: 10px;
   }
 
   @media screen and (max-width: 480px) {
@@ -61,11 +61,11 @@ export const AboutTitle = styled.h1`
 `;
 
 export const AboutP = styled.p`
-  margin-top: 4px;
+  margin: 14px;
   color: #373f41;
   font-size: 20px;
   max-width: 600px;
-  padding: 40px;
+  padding: 80px;
   text-align: justify; //TODO Change to center possibly if it looks weird with actual text
 
   @media screen and (max-width: 768px) {
@@ -79,10 +79,28 @@ export const AboutP = styled.p`
 `;
 
 export const AboutImg = styled.img`
-  max-height: 200px;
-  max-width: 500px;
-  object-fit: contain;
+  max-height: 300px;
+  border-radius: 50%;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 10px;
+`;
+
+export const AboutBg = styled.img`
+  z-index: 999;
+  width: 100vw;
+  max-height: 25%;
+  position: absolute;
+  margin-bottom: -10px;
+  top: 0;
+  left: 0;
+`;
+export const AboutToTestimonialBg = styled.img`
+  z-index: 999;
+  width: 100vw;
+  max-height: 25%;
+  position: absolute;
+  margin-bottom: -100px;
+  bottom: 0;
+  left: 0;
 `;

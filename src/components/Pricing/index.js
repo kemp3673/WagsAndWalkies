@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import WaveTransition from "../../images/pageImages/servicesToPrice.png";
 import {
   PricingContainer,
   PricingContent,
@@ -10,7 +11,9 @@ import {
   PricingListItem,
   PricingTitle,
   PricingDisclaimer,
-  PricingWrapper
+  PricingWrapper,
+  PricingBg,
+  AboutBg,
 } from "./pricingElements";
 
 const Pricing = () => {
@@ -22,6 +25,7 @@ const Pricing = () => {
   return (
     <>
       <PricingContainer id="pricing">
+      <PricingBg src={WaveTransition} alt="background"/>
         <PricingContent>
           <PricingWrapper data-aos="fade-left">
           <PricingH1>Pricing</PricingH1>
@@ -53,6 +57,7 @@ const Pricing = () => {
           </PricingWrapper>
         </PricingContent>
       </PricingContainer>
+
     </>
   );
 };

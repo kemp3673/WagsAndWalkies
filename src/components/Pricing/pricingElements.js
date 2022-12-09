@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PricingContainer = styled.div`
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
   z-index: 3;
   padding-bottom: 0;
@@ -13,7 +13,7 @@ export const PricingContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #FAEFE9;
+    background: #FBB156;
     z-index: 1;
   }
 `;
@@ -21,6 +21,7 @@ export const PricingContainer = styled.div`
 export const PricingWrapper = styled.div`
   height: fit-content;
   margin: 0 auto;
+  padding-top: 50px;
   z-index: 2;
 `;
 
@@ -33,6 +34,7 @@ export const PricingContent = styled.div`
   flex-direction: row;
   max-width: 1100px;
   justify-content: center;
+  padding-top: 50px;
   @media screen and (max-width: 1009px) {
     flex-direction: column;
   }
@@ -134,9 +136,8 @@ export const PricingListItem = styled.li`
 `;
 
 export const PricingTitle = styled.h2`
-  color: #373f41;
+  color: #5C7B7D;
   font-size: 22px;
-  /* text-align: left; */
   z-index: 3;
 
   @media screen and (max-width: 768px) {
@@ -146,4 +147,23 @@ export const PricingTitle = styled.h2`
   @media screen and (max-width: 480px) {
     font-size: 16px;
   }
+`;
+
+export const PricingBg = styled.img`
+  z-index: 999;
+  width: 100vw;
+  max-height: 25%;
+  position: absolute;
+  margin-bottom: -10px;
+  top: 0;
+  left: 0;
+`;
+
+export const AboutBg = styled.img`
+  z-index: 999;
+  width: 100vw;
+  max-height: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 `;

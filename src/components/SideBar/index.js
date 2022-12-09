@@ -15,7 +15,7 @@ const SideBar = ({ isOpen, toggle }) => {
     };
 
     return (
-        <SideBarContainer isOpen={isOpen} onClick={toggle}>
+        <SideBarContainer id="sidebar" isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
@@ -34,59 +34,48 @@ const SideBar = ({ isOpen, toggle }) => {
                         Home
                     </SideBarLink>
                     <SideBarLink
-                        // to="education"
-                        // onClick={toggle}
-                        // smooth={false}
-                        // spy={true}
-                        // duration={500}
-                        // exact='true'
-                        offset={-80}
+                        aria-label="Services Link"
+                        to="services"
+                        onClick={toggle}
+                        smooth={true}
+                        spy={true}
+                        duration={500}
+                        exact='true'
                     >
                         Services
                     </SideBarLink>
                     <SideBarLink
-                        // to="experience"
-                        // onClick={toggle}
-                        // smooth={false}
-                        // spy={true}
-                        // duration={500}
-                        // exact='true'
-                        offset={-80}
+                        aria-label="Pricing Link"
+                        to="pricing"
+                        onClick={toggle}
+                        smooth={true}
+                        spy={true}
+                        duration={500}
+                        exact='true'
                     >
                         Pricing
                     </SideBarLink>
                     <SideBarLink
-                        // to="employmentHistory"
-                        // onClick={toggle}
-                        // smooth={false}
-                        // spy={true}
-                        // duration={500}
-                        // exact='true'
-                        offset={-80}
+                        aria-label="About Us Link"
+                        to="about"
+                        onClick={toggle}
+                        smooth={true}
+                        spy={true}
+                        duration={500}
+                        exact='true'
                     >
                         About Us
                     </SideBarLink>
                     <SideBarLink
-                        // to="contact"
-                        // onClick={toggle}
-                        // smooth={false}
-                        // spy={true}
-                        // duration={500}
-                        // exact='true'
-                        offset={-80}
+                        aria-label="Testimonials Link"
+                        to="testimonials"
+                        onClick={toggle}
+                        smooth={true}
+                        spy={true}
+                        duration={500}
+                        exact='true'
                     >
                         Testimonials
-                    </SideBarLink>
-                    <SideBarLink
-                        // to="contact"
-                        // onClick={toggle}
-                        // smooth={false}
-                        // spy={true}
-                        // duration={500}
-                        // exact='true'
-                        offset={-80}
-                    >
-                        Contact Us
                     </SideBarLink>
                 </SideBarMenu>
             </SideBarWrapper>

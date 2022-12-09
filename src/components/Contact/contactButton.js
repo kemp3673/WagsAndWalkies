@@ -20,7 +20,6 @@ const ContactButton = ({ formValues, setFormErrors }) => {
   //TODO Create function that when SENT is clicked, empties form values and reset states and button
 
   const handleSend = useCallback(() => {
-    console.log(formValues);
     let errors = validator(formValues);
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {

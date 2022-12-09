@@ -14,7 +14,7 @@ export const ServicesContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #EFF2F1;
+    background: #E3ECE9;
     z-index: 1;
   }
 `;

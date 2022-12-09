@@ -1,28 +1,35 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
+
+// TODO fix mobile view form size. Currently it is offset due to form itself being too large.
 export const ContactContainer = styled.div`
-  align-items: center;
+  display: flex;
   height: fit-content;
   position: relative;
   z-index: 3;
-  padding: 20px 0 20px 0;
+  padding: 20px;
   :before {
-    content: "";
-    position: absolute;
-    top: 0;
+    content: " ";
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ede5db;
-    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(black, black),
+      url("https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"); /* Image provided by okeyKat via Unsplash */
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: sepia(30%);
   }
 `;
 
 export const ContactContent = styled.div`
   height: fit-content;
   border-radius: 12px;
-  padding: 20px 0 0 0;
+  //padding: 20px 0 0 0;
   margin: 0 auto;
   z-index: 2;
   position: relative;
@@ -152,14 +159,14 @@ export const SendButton = styled.button`
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #5C7B7D; /*TODO update color*/
+  background-color: #5c7b7d; /*TODO update color*/
   color: #fff;
   position: relative;
   border-radius: 8px;
   font-size: 21px;
   cursor: pointer;
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
-  :active {
+  &:active {
     transform: translateY(3px);
   }
 `;
@@ -170,7 +177,7 @@ export const SuccessButton = styled.button`
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #C1D8D6; /*TODO update color*/
+  background-color: #c1d8d6; /*TODO update color*/
   color: #373f41;
   position: relative;
   border-radius: 8px;
@@ -185,7 +192,7 @@ export const SendingButton = styled.button`
   padding: 10px 10px 10px 0;
   padding-left: 15px;
   text-align: left;
-  background-color: #82B3A4; /*TODO update color*/
+  background-color: #82b3a4; /*TODO update color*/
   color: #373f41;
   position: relative;
   border-radius: 8px;
@@ -200,8 +207,8 @@ export const SendingImg = styled.img`
 `;
 
 export const ContactError = styled.p`
-  padding: 10px;
-  margin: 10px;
+  padding: 2px;
+  margin-top: -10px;
   color: red;
   font-size: 16px;
   width: 80%;
@@ -216,7 +223,6 @@ export const ContactChars = styled.span`
   font-size: 12px;
   color: #373f41;
 `;
-
 
 const DotTypingAnimation = keyframes`
   0% {

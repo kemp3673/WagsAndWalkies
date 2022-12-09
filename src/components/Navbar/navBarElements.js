@@ -3,9 +3,8 @@ import { Link as LinkS } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
 
 export const Nav = styled.nav`
-  /* background: #C1D8D6; */
-  /* background: none; */
-  background-color: rgba(193, 216, 214, 0.8);
+  background: rgba(193, 216, 214, 0.8);
+  box-shadow: 0 0 25px 0 black;
   backdrop-filter: blur(5px);
   height: 80px;
   width: 100vw;

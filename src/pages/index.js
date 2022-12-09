@@ -22,8 +22,6 @@ const Home = () => {
   const toggleModal = () => {
       setShowModal(current => !current);
   };
-  //TODO Add scroll animations to application
-  //TODO Add SVG wave to background once color is selected ... https://www.shapedivider.app/
 
   return (
     <>

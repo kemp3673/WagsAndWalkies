@@ -1,7 +1,8 @@
 .carousel-root {
   width: 64%;
+  max-width: 1100px;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 80px;
 }
 
 .carousel .slide {
@@ -33,7 +34,6 @@
 .carousel .control-dots {
   padding-left: 5px;
   outline: 0;
-  /* bottom: 5%; */
 }
 
 .myCarousel h3 {
@@ -88,10 +88,10 @@
 }
 
 .carousel.carousel-slider .control-arrow {
-  background: #000 !important;
-  height: 50px !important;
+  background: #000;
+  height: 50px;
   position: absolute;
-  top: 35% !important;
+  top: 35%;
 }
 
 .App {
@@ -101,12 +101,13 @@
 @media only screen and (max-width: 934px) {
   .carousel-root {
     outline: 0;
-    width: 93% !important;
-    margin: auto !important;
+    width: 93%;
+    margin: auto;
+    padding-top: 80px;
   }
 
   .carousel.carousel-slider .control-arrow {
-    display: none !important;
+    display: none;
   }
   .myCarousel {
     background: #fafafa;
@@ -119,7 +120,7 @@
     padding-left: 5%;
     padding-right: 5%;
     border: 1px solid #ddd;
-    height: 269px;
+    height: 320px;
   }
 
   .carousel .slide img {

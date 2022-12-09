@@ -16,7 +16,6 @@ export const AttributionModalContainer = styled.div`
   @media screen and (max-width: 768px) {
     animation: 0.5s ease-in-out 0s 1 slideInDown;
     transition: 0.3s ease-in-out;
-    background: white;
   }
 `;
 
@@ -25,7 +24,7 @@ export const AttributionModalContent = styled.div`
   transition: 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #EFF2F1;
   position: relative;
   z-index: 999;
   border-radius: 10px;
@@ -33,7 +32,6 @@ export const AttributionModalContent = styled.div`
   height: fit-content;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   padding: 2rem;
-  color: #000;
   line-height: 1.8;
   font-size: 1rem;
   margin-right: 20px;
@@ -83,7 +81,7 @@ export const AttributionModalWrapper = styled.div`
 `;
 
 export const AttributionModalHeader = styled.div`
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1 rem;
@@ -91,7 +89,7 @@ export const AttributionModalHeader = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 80%;
-  } */
+  }
 `;
 
 
@@ -106,12 +104,12 @@ export const AttributionModalClose = styled.div`
 `;
 
 export const AttributionModalBody = styled.div`
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding-top: 20px;
   height: fit-content;
-  width: 100%; */
+  width: 100%;
 `;
 
 export const AttributionModalTitle = styled.h2`
@@ -123,8 +121,12 @@ export const AttributionModalTitle = styled.h2`
 
 export const AttributionList = styled.ul`
   list-style-type: none;
+  margin-left: 10px;
+  font-size: 1rem;
 `;
 
 export const AttributionListIcon = styled.img`
-  height: 60px;
+  height: 30px;
+  margin-bottom: -10px;
+  padding-top: 5px;
 `;

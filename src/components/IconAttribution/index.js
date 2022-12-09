@@ -44,6 +44,7 @@ const Attribution = ({ toggleModal, showModal }) => {
               <AttributionModalClose onClick={() => toggleModal()}>
                 <CgClose />
               </AttributionModalClose>
+              </AttributionModalHeader>
               <AttributionModalBody>
                 <AttributionList>
                   {/* Make li named component and tell it to flex row to get the icon and text next to each other. */}
@@ -81,7 +82,6 @@ const Attribution = ({ toggleModal, showModal }) => {
                   </li>
                 </AttributionList>
               </AttributionModalBody>
-            </AttributionModalHeader>
           </AttributionModalContent>
         </AttributionModalWrapper>
       </AttributionModalContainer>
