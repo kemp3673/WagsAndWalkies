@@ -70,6 +70,7 @@ _Below is an example of how you can instruct your audience on installing and set
     - pageImages contains main site images such a waves and backgrounds. 
     - icons contains all the icons files used across the site.
     - testimonials contains dog images that are used for tesimonial component
+ 8. Update links in footer to relevant Facebook/TikTok if applicable, otherwise replace/remove.
 
 <!-- SCREENSHOTS -->
 ### Screenshots
