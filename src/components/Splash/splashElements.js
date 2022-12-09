@@ -51,9 +51,14 @@ export const SplashH1 = styled.h1`
   justify-content: center;
   align-items: center;
   color: #DA8C29;
-  font-size: 40px;
+  font-size: 60px;
   text-align: left;
-  padding: 0 20px;
+  /* padding: 20px 20px; */
+  padding-left: 20px;
+  padding-bottom: 50px;
+  /* padding-top: 20px; */
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 1px #252626);
 
   @media screen and (max-width: 768px) {
     font-size: 38px;
@@ -69,8 +74,8 @@ export const SplashH1 = styled.h1`
 export const SplashP = styled.p`
   margin-top: 24px;
   color: #5C7B7D;
-  font-size: 1.2em;
-  text-align: left;
+  font-size: 1.7em;
+  text-align: justify;
   max-width: 800px;
   height: fit-content;
   padding: 0 20px;
@@ -88,7 +93,7 @@ export const SplashP = styled.p`
 export const SplashPSocial = styled.p `
   margin-top: 24px;
   color: #5C7B7D;
-  font-size: 1.2em;
+  font-size: 1.5em;
   max-width: 800px;
   height: fit-content;
   padding-right: 20px;
