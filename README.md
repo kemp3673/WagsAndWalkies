@@ -2,7 +2,7 @@
 Dog Walking Website
 
 <!-- TABLE OF CONTENTS -->
-<details>
+
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -20,7 +20,7 @@ Dog Walking Website
     <li><a href="#screenshots">Site Screenshots</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
-</details>
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
