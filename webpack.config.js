@@ -10,8 +10,8 @@ module.exports = {
   },
   // plugins: [
   //   new HtmlWebpackPlugin({
-  //     //ANCHOR inject: 'body',
   //     filename: 'index.html',
+  //     inject: 'head',
   //     template: './src/index.html',
   //   })],
   module: {
@@ -66,11 +66,11 @@ module.exports = {
     path:path.resolve(__dirname, "public"),
     filename: '[name].js'
   },
-  // plugins: [new HtmlWebpackPlugin({
-  //   //ANCHOR inject: 'body',
-  //   filename: 'index.html',
-  //   template: './src/index.html',
-  // })],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     filename: 'index.html',
+  //     template: './src/index.html',
+  //   })],
   module: {
     rules: [
       {

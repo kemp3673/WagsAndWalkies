@@ -27,6 +27,8 @@ const Testimonials = () => {
         showStatus={false}
         autoPlay={true}
         interval={5000}
+        preventMovementUntilSwipeScrollTolerance={true}
+        swipeScrollTolerance={50}
       >
         <div>
           <img src={Max} alt="Max Testimonial" />
