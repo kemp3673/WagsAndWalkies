@@ -23,7 +23,8 @@ Dog Walking Website
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project![Screen Shot 2022-12-10 at 12 53 59 AM](https://user-images.githubusercontent.com/102747919/206836301-463c70f5-a50f-4e94-8117-57ca6afe481e.png)
+## About The Project
+![Screen Shot 2022-12-10 at 12 53 59 AM](https://user-images.githubusercontent.com/102747919/206836301-463c70f5-a50f-4e94-8117-57ca6afe481e.png)
 
 
 Website created for small dog walking business. Customer wanted a unique website that was fairly simplistic, showed off what they had to offer, contained testimonials from customers, and contained ability for potential consumers to message them via email.
@@ -83,10 +84,19 @@ _Below is an example of how you can instruct your audience on installing and set
 ![Screen Shot 2022-12-10 at 12 55 15 AM](https://user-images.githubusercontent.com/102747919/206836349-71786520-e745-4480-adaa-74156888cadd.png)
 ![Screen Shot 2022-12-10 at 12 55 36 AM](https://user-images.githubusercontent.com/102747919/206836357-7c50c387-f2d9-41d9-9931-1ac17844c1f3.png)
 ![Screen Shot 2022-12-10 at 12 55 54 AM](https://user-images.githubusercontent.com/102747919/206836367-c302ad7c-5df9-48b0-9fe2-e8f665b0b315.png)
-
-![Screen Shot 2022-12-10 at 1 00 07 AM](https://user-images.githubusercontent.com/102747919/206836524-743a592d-202b-44af-973d-d8aa797a3f15.png)
-![Screen Shot 2022-12-10 at 1 00 34 AM](https://user-images.githubusercontent.com/102747919/206836533-62d033a4-216d-4c2d-b323-6b44dfd2feab.png)
-
+<div id="mobile" align="center">
+    <img align="center" src="https://user-images.githubusercontent.com/102747919/206836524-743a592d-202b-44af-973d-d8aa797a3f15.png"/>
+  <br/>
+     <img align="center" src="https://user-images.githubusercontent.com/102747919/206836533-62d033a4-216d-4c2d-b323-6b44dfd2feab.png"/>
+  <br/>
+    <img align="center" src="https://user-images.githubusercontent.com/102747919/206836551-e41d8a80-ae0d-468f-9efa-7f34f44510ea.png"/>
+  <br/>
+    <img align="center" src="https://user-images.githubusercontent.com/102747919/206837679-a56293b4-40bb-42f4-a531-cb197849c57a.png"/>
+  <br/>
+    <img align="center" src="https://user-images.githubusercontent.com/102747919/206836583-67f0eeda-572a-41df-ba84-3009b448581e.png"/>
+  <br/>
+    <img align="center" src="https://user-images.githubusercontent.com/102747919/206836588-5253cc6f-111d-4822-9e03-9bf2d80e296e.png"/>
+</div>
 
 
 <!-- CONTACT -->
