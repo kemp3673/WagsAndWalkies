@@ -143,7 +143,7 @@ export const ContactMessage = styled.textarea`
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #373f41;
-  background-color: white; /*TODO update color*/
+  background-color: white;
   font-size: 16px;
 
   @media screen and (max-width: 768px) {
@@ -158,13 +158,12 @@ export const ContactMessage = styled.textarea`
   }
 `;
 
-//TODO Add hover attribute
 export const SendButton = styled.button`
   border: none;
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #5c7b7d; /*TODO update color*/
+  background-color: #5c7b7d;
   color: #fff;
   position: relative;
   border-radius: 8px;
@@ -182,7 +181,7 @@ export const SuccessButton = styled.button`
   outline: none;
   width: 150px;
   padding: 10px;
-  background-color: #c1d8d6; /*TODO update color*/
+  background-color: #c1d8d6;
   color: #373f41;
   position: relative;
   border-radius: 8px;
@@ -197,7 +196,7 @@ export const SendingButton = styled.button`
   padding: 10px 10px 10px 0;
   padding-left: 15px;
   text-align: left;
-  background-color: #82b3a4; /*TODO update color*/
+  background-color: #82b3a4;
   color: #373f41;
   position: relative;
   border-radius: 8px;

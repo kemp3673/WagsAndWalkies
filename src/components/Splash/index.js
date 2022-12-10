@@ -13,7 +13,7 @@ const Splash = () => {
     <SplashContainer>
       <Bg src={Wave} alt="background"/>
       <SplashContent>
-        <div style={{paddingBottom:"50px"}}>
+        <div style={{paddingBottom:"60px"}}>
           <SplashH1>Your Friendly Neighborhood Dog Walker</SplashH1>
           <SplashP>
             Whether your energetic lab needs some extra walks or you need

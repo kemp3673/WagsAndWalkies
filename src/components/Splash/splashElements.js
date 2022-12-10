@@ -38,7 +38,7 @@ export const SplashContent = styled.div`
 `;
 
 export const Bg = styled.img`
-  z-index: 999;
+  z-index: 10;
   width: 100vw;
   max-height: 25%;
   position: absolute;
@@ -81,9 +81,10 @@ export const SplashP = styled.p`
   max-width: 800px;
   height: fit-content;
   padding: 0 20px;
+  z-index: 15;
   filter: drop-shadow(0.5px 0.5px 0.3px #252626);
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 60px;
-  }
+  /* @media screen and (max-width: 768px) {
+    padding-bottom: 60px;
+  } */
 `;
