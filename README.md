@@ -84,6 +84,8 @@ _Below is an example of how you can instruct your audience on installing and set
 ![Screen Shot 2022-12-10 at 12 55 36 AM](https://user-images.githubusercontent.com/102747919/206836357-7c50c387-f2d9-41d9-9931-1ac17844c1f3.png)
 ![Screen Shot 2022-12-10 at 12 55 54 AM](https://user-images.githubusercontent.com/102747919/206836367-c302ad7c-5df9-48b0-9fe2-e8f665b0b315.png)
 
+![Screen Shot 2022-12-10 at 1 00 07 AM](https://user-images.githubusercontent.com/102747919/206836524-743a592d-202b-44af-973d-d8aa797a3f15.png)
+![Screen Shot 2022-12-10 at 1 00 34 AM](https://user-images.githubusercontent.com/102747919/206836533-62d033a4-216d-4c2d-b323-6b44dfd2feab.png)
 
 
 
