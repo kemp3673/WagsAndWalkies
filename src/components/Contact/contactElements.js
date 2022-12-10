@@ -117,7 +117,7 @@ export const ContactInput = styled.input`
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #373f41;
-  background-color: white; /*TODO update color*/
+  background-color: white;
   font-size: 16px;
 
   @media screen and (max-width: 768px) {
@@ -149,7 +149,7 @@ export const ContactMessage = styled.textarea`
   @media screen and (max-width: 768px) {
     border-bottom: 1.5px solid #373f41;
     margin-left: 0;
-    width: 60vw;
+    width: 64vw;
     font-size: 14px;
   }
 

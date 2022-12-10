@@ -61,13 +61,7 @@ export const ServicesList = styled.ul`
 
   @media screen and (max-width: 768px) {
     height: fit-content;
-    width: 260px;
-    margin: 5px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: fit-content;
-    width: 220px;
+    width: 100vw;
     margin: 5px;
   }
 `;
@@ -84,13 +78,7 @@ export const ServicesListItem = styled.li`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     height: fit-content;
-    width: 260px;
-  }
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    height: fit-content;
-    width: 220px;
+    width: 300px;
   }
 `;
 

@@ -12,6 +12,11 @@ export const SplashContainer = styled.div`
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    min-height: 90vh;
+}
 `;
 
 export const SplashContent = styled.div`
@@ -28,6 +33,7 @@ export const SplashContent = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: center;
+    min-height: 90vh;
 }
 `;
 
@@ -49,10 +55,8 @@ export const SplashH1 = styled.h1`
   color: #da8c29;
   font-size: 40px;
   text-align: left;
-  /* padding: 20px 20px; */
   padding-left: 20px;
   padding-bottom: 50px;
-  /* padding-top: 20px; */
   font-weight: bold;
   filter: drop-shadow(1px 1px 0.5px #252626);
 
@@ -78,4 +82,8 @@ export const SplashP = styled.p`
   height: fit-content;
   padding: 0 20px;
   filter: drop-shadow(0.5px 0.5px 0.3px #252626);
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
 `;
