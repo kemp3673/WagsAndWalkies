@@ -44,7 +44,7 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div>
+        {/* <div>
           <img src={Johanna} alt="Johanna Testimonial" />
           <div className="myCarousel">
             <h3>Brian</h3>
@@ -53,7 +53,7 @@ const Testimonials = () => {
             Doggo ipsum corgo borkf doge sub woofer corgo, blop pats. Corgo adorable doggo vvv puggorino what a nice floof yapper shibe, maximum borkdrive clouds borkdrive borkf. I am bekom fat you are doin me a concern wow such tempt
             </p>
           </div>
-        </div>
+        </div> */}
         <div>
           <img src={Enzo} alt="Enzo Testimonial" />
           <div className="myCarousel">
@@ -67,7 +67,7 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div>
+        {/* <div>
           <img src={Maggie} alt="Maggie Testimonial" />
           <div className="myCarousel">
             <h3>Jessica</h3>
@@ -76,8 +76,8 @@ const Testimonials = () => {
             Heckin good boys you are doing me a frighten long water shoob dat tungg tho mlem, fluffer very hand that feed shibe big ol pupper. Clouds fluffer borkdrive smol, many pats. Lotsa pats big ol pupper yapper shooberino pats, length boy dat tungg tho doing me a frighten. Adorable doggo doggorino dat tungg tho, long bois. Dat tungg tho shibe wow very biscit waggy.
             </p>
           </div>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <img src={Brownie} alt="Brownie Testimonial" />
           <div className="myCarousel">
             <h3>Nyya</h3>
@@ -86,8 +86,8 @@ const Testimonials = () => {
             What a nice floof you are doing me a frighten very good spot pupper much ruin diet very good spot, what a nice floof thicc sub woofer blop. Blep blop borking doggo noodle horse, you are doing me the shock big ol pupper.
             </p>
           </div>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <img src={Cecil} alt="Cecil Testimonial" />
           <div className="myCarousel">
             <h3>Sarah</h3>
@@ -96,7 +96,7 @@ const Testimonials = () => {
             Corgo thicc floofs very taste wow long bois I am bekom fat, clouds wow very biscit ur givin me a spook shoob puggo long water shoob, doggo aqua doggo shoober long woofer. Shoober shooberino bork woofer borking doggo smol borking doggo with a long snoot for pats long water shoob, h*ck the neighborhood pupper ur givin me a spook doggorino.
             </p>
           </div>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

@@ -89,6 +89,7 @@ export const PricingP = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 14px;
+    text-align: center;
   }
 `;
 
@@ -108,6 +109,7 @@ export const PricingList = styled.ul`
     height: fit-content;
     width: 260px;
     margin: 5px;
+    padding-bottom: 20px;
   }
 
   @media screen and (max-width: 480px) {
