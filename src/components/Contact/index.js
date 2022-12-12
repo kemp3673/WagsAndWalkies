@@ -53,7 +53,7 @@ const Contact = () => {
 
   return (
     <>
-      <ContactContainer>
+      <ContactContainer id="contact">
         <ContactContent>
           <ContactWrapper>
             <ContactHeader>

@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   background: rgba(193, 216, 214, 0.8);
   box-shadow: 0 0 25px 0 black;
   backdrop-filter: blur(5px);
-  height: 80px;
+  height: 50px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@ export const CollapsedIcons = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -94,6 +94,20 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 
+export const NavPageLink = styled(LinkR)`
+  color: #5C7B7D;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 75px;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+`;
 export const NavLogoImg = styled.img`
   height: 75%;
 `;

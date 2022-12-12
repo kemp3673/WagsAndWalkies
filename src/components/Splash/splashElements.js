@@ -75,14 +75,15 @@ export const SplashH1 = styled.h1`
 
 export const SplashP = styled.p`
   margin-top: 24px;
-  color: #5c7b7d;
+  /* color: #5c7b7d; */
+  color: black;
   font-size: 1.4em;
   text-align: justify;
   max-width: 800px;
   height: fit-content;
   padding: 0 20px;
   z-index: 15;
-  filter: drop-shadow(0.5px 0.5px 0.3px #252626);
+  /* filter: drop-shadow(0.5px 0.5px 0.3px #252626); */
 
   /* @media screen and (max-width: 768px) {
     padding-bottom: 60px;

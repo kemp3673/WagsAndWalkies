@@ -1,46 +1,54 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
+import { Link as LinkR } from "react-router-dom";
 import { FaTimes } from 'react-icons/fa';
 
+
+const slideInRight = keyframes`
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
+
+const slideOutRight = keyframes`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+`;
+
 export const SideBarContainer = styled.aside`
-  animation: 1s ease-out 0s 1 slideInLeft;
   position: fixed;
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  background: rgba(193, 216, 214, 0.5);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
+  //backdrop-filter: blur(5px);
   display: grid;
-  align-items: center;
+  align-items: top;
+  justify-content: left;
+  top: 50px;
   left: 0;
-  transition: 0.5s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-`;
-
-export const Icon = styled.div`
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  font-size: 2rem;
-  background: transparent;
-  cursor: pointer;
-  outline: none;
-`;
-
-export const CloseIcon = styled(FaTimes)`
-  color: #5C7B7D;
 `;
 
 export const SideBarWrapper = styled.div`
-  color: #E0D8B4;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  background-color: #373F41;
+  animation: ${slideInRight} 0.3s ease-in-out;
 `;
 
 export const SideBarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 80px);
-  text-align: center;
+  grid-template-rows: repeat(4, 50px);
   font-weight: bold;
 
   @media screen and (max-width: 480px) {
@@ -51,14 +59,34 @@ export const SideBarMenu = styled.ul`
 export const SideBarLink = styled(LinkS)`
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
+  justify-content: left;
+  padding-left: 2rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  text-shadow: 1px 1px 2px white;
-  color: #373F41;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+`;
+
+export const SideBarPageLink = styled(LinkR)`
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  font-weight: 100;
+  color: white;
   cursor: pointer;
   &:hover {
     transition: all 0.2s ease-in-out;

@@ -1,7 +1,4 @@
-import React from 'react';
-
 export const formValidation = (values) => {
-    console.log(values);
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.message) {

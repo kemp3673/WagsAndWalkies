@@ -1,13 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
-import Home from "./pages";
-
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home.js";
+import GalleryPage from "./pages/gallery.js";
 
 function App() {
   return (
-    <Router>
-      <Home />
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route exact path="/gallery" element={<GalleryPage />} />
+    </Routes>
   );
 }
 

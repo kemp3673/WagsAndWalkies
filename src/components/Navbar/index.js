@@ -1,45 +1,60 @@
-import React from 'react';
-import { FaBars } from 'react-icons/fa';
-import { Nav, NavBarContainer, NavLogo, CollapsedIcons, NavMenu, NavItem, NavLinks, NavLogoImg } from './navBarElements';
-import SiteLogo from '../../images/icons/pawPrint.png';
+import React from "react";
+import { FaBars } from "react-icons/fa";
+import {
+  Nav,
+  NavBarContainer,
+  NavLogo,
+  CollapsedIcons,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavLogoImg,
+  NavPageLink,
+} from "./navBarElements";
+import SiteLogo from "../../images/icons/pawPrint.png";
 
-const NavBar = ({ toggle }) => {
+const NavBar = ({ toggle, isOpen }) => {
   const toggleHome = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
+    });
+  };
+
+  const toggleContact = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
     });
   };
 
   // Check if scrolling down/up and hide/show navbar accordingly
   let prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
+  window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     // eslint-disable-next-line no-restricted-globals
-    if (prevScrollpos < currentScrollPos) {
-      document.getElementById("navbar").style.top = "-80px";
-    } else {
-      document.getElementById("navbar").style.top = "0";
+    if (document.getElementById("navbar") !== null) {
+      if (prevScrollpos < currentScrollPos && !isOpen) {
+        document.getElementById("navbar").style.top = "-80px";
+      } else {
+        document.getElementById("navbar").style.top = "0";
+      }
     }
     prevScrollpos = currentScrollPos;
   };
 
   return (
     <>
-      <Nav id='navbar'>
+      <Nav id="navbar">
         <NavBarContainer>
           <NavLogo
-            to='/'
-            smooth={true}
-            spy={true}
-            duration={500}
-            exact='true'
-            onClick={toggleHome}>
-              <NavLogoImg src={SiteLogo} alt="Paw Print Logo"/>
-              Wags and Walkies
-              </NavLogo>
+            onClick={toggleHome}
+          >
+            <NavLogoImg src={SiteLogo} alt="Paw Print Logo" />
+            Wags and Walkies
+          </NavLogo>
           <CollapsedIcons onClick={toggle}>
-            <FaBars />
+            <FaBars size={20} />
           </CollapsedIcons>
           <NavMenu>
             <NavItem>
@@ -49,9 +64,10 @@ const NavBar = ({ toggle }) => {
                 smooth={true}
                 spy={true}
                 duration={500}
-                exact='true'
-                // offset={-80}
-              >Services</NavLinks>
+                exact="true"
+              >
+                Services
+              </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
@@ -60,21 +76,11 @@ const NavBar = ({ toggle }) => {
                 smooth={true}
                 spy={true}
                 duration={500}
-                exact='true'
-                // offset={-80}
-              >Pricing</NavLinks>
+                exact="true"
+              >
+                Pricing
+              </NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                aria-label="About Us Link"
-                to="about"
-                smooth={true}
-                spy={true}
-                duration={500}
-                exact='true'
-                // offset={-80}
-              >About Us</NavLinks>
-            </NavItem> */}
             <NavItem>
               <NavLinks
                 aria-label="Testimonials Link"
@@ -82,15 +88,39 @@ const NavBar = ({ toggle }) => {
                 smooth={true}
                 spy={true}
                 duration={500}
-                exact='true'
-                // offset={-80}
-              >Testimonials</NavLinks>
+                exact="true"
+                offset={-80}
+              >
+                Testimonials
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                aria-label="Contact Link"
+                onClick={toggleContact}
+                to="contact"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact="true"
+                offset={-80}
+              >
+                Contact
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavPageLink
+                aria-label="Gallery Link"
+                to="/gallery"
+              >
+                Gallery
+              </NavPageLink>
             </NavItem>
           </NavMenu>
         </NavBarContainer>
       </Nav>
     </>
-  )
-}
+  );
+};
 
 export default NavBar;
