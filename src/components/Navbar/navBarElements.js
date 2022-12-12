@@ -17,6 +17,12 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 99;
   transition: top 0.5s ease-in-out;
+  @media screen and (max-width: 860px) {
+    height: 80px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 50px;
+  }
 `;
 export const NavBarContainer = styled.div`
   display: flex;
