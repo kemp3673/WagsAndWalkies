@@ -116,12 +116,11 @@ export const ContactInput = styled.input`
   margin-bottom: 1rem;
   border: none;
   border-radius: 0;
-  border-bottom: 2px solid #373f41;
+  border-bottom: 1.5px solid #373f41;
   background-color: white;
   font-size: 16px;
 
   @media screen and (max-width: 768px) {
-    border-bottom: 1.5px solid #373f41;
     margin-left: 0;
     width: 60vw;
     font-size: 14px;
@@ -133,7 +132,7 @@ export const ContactInput = styled.input`
 `;
 
 export const ContactMessage = styled.textarea`
-  width: 350px;
+  width: 365px;
   min-height: 50px;
   box-sizing: border-box;
   resize: none;
@@ -142,12 +141,11 @@ export const ContactMessage = styled.textarea`
   margin-bottom: 1rem;
   border: none;
   border-radius: 0;
-  border-bottom: 2px solid #373f41;
+  border-bottom: 1.5px solid #373f41;
   background-color: white;
   font-size: 16px;
 
   @media screen and (max-width: 768px) {
-    border-bottom: 1.5px solid #373f41;
     margin-left: 0;
     width: 64vw;
     font-size: 14px;
@@ -175,7 +173,6 @@ export const SendButton = styled.button`
   }
 `;
 
-//TODO just a hair to much height to match other buttons
 export const SuccessButton = styled.button`
   border: none;
   outline: none;

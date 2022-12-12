@@ -16,20 +16,20 @@ import image_15 from '../../images/galleryImages/image_15.jpeg';
 import image_16 from '../../images/galleryImages/image_16.jpeg';
 
 export const Images = [
-  {
-    id: 1,
-    imgSrc: image_1,
-    imgAlt: 'Hank',
-    imgTitle: 'Hank',
-    imgDesc: 'Walking with Hank is the best',
-  },
-  {
-    id: 2,
-    imgSrc: image_2,
-    imgAlt: 'Hank',
-    imgTitle: 'Hank is a good boy!',
-    imgDesc: 'Walking with Hank is the best',
-  },
+  // {
+  //   id: 1,
+  //   imgSrc: image_1,
+  //   imgAlt: 'Hank',
+  //   imgTitle: 'Hank',
+  //   imgDesc: 'Walking with Hank is the best',
+  // },
+  // {
+  //   id: 2,
+  //   imgSrc: image_2,
+  //   imgAlt: 'Hank',
+  //   imgTitle: 'Hank is a good boy!',
+  //   imgDesc: 'Walking with Hank is the best',
+  // },
   {
     id: 3,
     imgSrc: image_3,
