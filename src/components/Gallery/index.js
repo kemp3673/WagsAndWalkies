@@ -57,7 +57,7 @@ const Gallery = ({ modalIsOpen, setModalIsOpen }) => {
           </GalleryCloseBtn>
           <GalleryModalImg src={image.imgSrc} alt={image.imgAlt} />
         </GalleryModal>
-        <GalleryTitle>Our Satisfied Clients</GalleryTitle>
+        {/* <GalleryTitle>Our Satisfied Clients</GalleryTitle> */}
         <GalleryWrapper>
           {Images.map((image) => {
             return (

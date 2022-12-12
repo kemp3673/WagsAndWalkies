@@ -64,7 +64,7 @@ export const GalleryModal = styled.div`
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background: rgb(0, 0, 0, 0.95);
+  background: rgb(0, 0, 0, 0.9);
   z-index: 999;
   left: 0;
   top: 0;
