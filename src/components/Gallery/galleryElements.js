@@ -10,6 +10,7 @@ export const GalleryContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: fit-content;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 `;
