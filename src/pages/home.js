@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Aos from 'aos';
 import SideBar from '../components/SideBar';
 import NavBar from '../components/Navbar';
 import Splash from '../components/Splash';
@@ -11,6 +12,11 @@ import Attribution from '../components/IconAttribution';
 
 
 const Home = () => {
+  // Initialize Aos to listen and provide global animation
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = React.useState(false);
 

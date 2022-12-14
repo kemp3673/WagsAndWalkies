@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Aos from 'aos';
+import React from "react";
 import "aos/dist/aos.css";
 import {
   ServicesContainer,
@@ -20,11 +19,7 @@ import HomeIcon from "../../images/icons/home.png";
 import Training from "../../images/icons/training.png";
 
 const Services = () => {
-  // Initialize Aos to listen and provide global animation
-  useEffect(() => {
-    Aos.init({duration: 2000});
-  }, []);
-
+  // AOS animation is initialized within the home.js file
   return (
     <>
       <ServicesContainer id="services">

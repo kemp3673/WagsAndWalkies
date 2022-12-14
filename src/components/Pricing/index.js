@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
+import React from "react";
 import "aos/dist/aos.css";
 import WaveTransition from "../../images/pageImages/servicesToPrice.png";
 import AboutTransition from "../../images/pageImages/aboutToTestimonials.png";
@@ -18,11 +17,7 @@ import {
 } from "./pricingElements";
 
 const Pricing = () => {
-  // Initialize Aos to listen and provide global animation
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
+  // AOS animation is initialized within the home.js file
   return (
     <>
       <PricingContainer id="pricing">

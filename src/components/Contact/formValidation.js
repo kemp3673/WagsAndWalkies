@@ -12,6 +12,7 @@ export const formValidation = (values) => {
     } else if (!regex.test(values.email)) {
       errors.email = "Not a valid Email format"
     }
+    // TODO Add phone number validation to verify length
     return errors;
   }
 

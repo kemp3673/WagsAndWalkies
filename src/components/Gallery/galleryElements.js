@@ -120,7 +120,7 @@ export const GalleryReturnIcon = styled(Icon)`
   padding-bottom: 2px;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-    padding-bottom: 0;
+    padding-bottom: 1px;
   }
 `;
 
