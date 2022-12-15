@@ -74,7 +74,7 @@ const Contact = () => {
                 }}
               />
               {formErrors.name ? <ContactError>{formErrors.name}</ContactError> : null}
-              <ContactLabel>Last Name</ContactLabel>
+              <ContactLabel>Last Name <span style={{fontSize: "12px"}}>(Optional)</span></ContactLabel>
               <ContactInput
                 type="text"
                 id="lastName"
@@ -97,7 +97,7 @@ const Contact = () => {
                 }}
               />
               {formErrors.email ? <ContactError>{formErrors.email}</ContactError> : null}
-              <ContactLabel>Phone</ContactLabel>
+              <ContactLabel>Phone <span style={{fontSize: "12px"}}>(Optional)</span></ContactLabel>
               <PhoneInput
                 className="phone"
                 country="US"
@@ -110,6 +110,7 @@ const Contact = () => {
                   setFormValues({ ...formValues, phone: value })
                 }
               />
+              {formErrors.phone ? <ContactError>{formErrors.phone}</ContactError> : null}
               <ContactLabel>Message</ContactLabel>
               <ContactMessage
                 id="message"
