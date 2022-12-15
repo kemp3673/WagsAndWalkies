@@ -1,3 +1,5 @@
+/*!SECTION: Imports images to be displayed in Gallery*/
+
 import image_1 from '../../images/galleryImages/image_1.jpeg';
 import image_2 from '../../images/galleryImages/image_2.jpeg';
 import image_3 from '../../images/galleryImages/image_3.jpeg';

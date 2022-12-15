@@ -9,7 +9,6 @@ import {
   GalleryModal,
   GalleryCloseBtn,
   GalleryModalImg,
-  GalleryTitle,
   GalleryReturnBtn,
   GalleryReturnIcon,
   GalleryReturnTitle,
@@ -18,8 +17,9 @@ import {
 } from "./galleryElements";
 
 const Gallery = ({ modalIsOpen, setModalIsOpen }) => {
+  // State to hold image to be displayed in modal
   const [image, setImage] = useState("");
-
+  // Toggle modal and sets image to be displayed
   const openModal = (image) => {
     setImage(image);
     setModalIsOpen(true);

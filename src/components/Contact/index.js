@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Aos from "aos";
 import PhoneInput from "react-phone-number-input/input";
 import ContactButton from "./contactButton";
 import "aos/dist/aos.css";
@@ -19,11 +18,6 @@ import {
 } from "./contactElements";
 
 const Contact = () => {
-  // Initialize Aos to listen and provide global animation
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   // Declaration of state values
   const formDefault = {
     message: "",
@@ -43,7 +37,7 @@ const Contact = () => {
     } else {
       textField.style.cssText = `height: 50px;`;
     }
-  }, [formValues.message])
+  }, [formValues.message]);
 
   // Updates form values from inputs
   const handleChange = (e) => {
