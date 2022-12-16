@@ -28,6 +28,16 @@ const Home = () => {
       setShowModal(current => !current);
   };
 
+  // Prevent vertical scroll when sidebar is open
+  useEffect(() => {
+    console.log(isOpen);
+      if (isOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'unset';
+      }
+  }, [isOpen]);
+
   return (
     <>
       {isOpen ? <SideBar isOpen={isOpen} toggle={toggle} /> : null}
