@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home.js";
 import GalleryPage from "./pages/gallery.js";

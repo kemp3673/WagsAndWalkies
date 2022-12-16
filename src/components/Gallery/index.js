@@ -17,6 +17,10 @@ import {
 } from "./galleryElements";
 
 const Gallery = ({ modalIsOpen, setModalIsOpen }) => {
+  // Scroll to top of page when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Ref to hold modal element
   let ref = useRef();
   // Handle click outside of modal
