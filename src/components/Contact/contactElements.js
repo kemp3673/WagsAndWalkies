@@ -269,3 +269,10 @@ export const AnimationWrapper = styled.div`
   left: 115px;
   bottom: 15px;
 `;
+
+export const ContactRadio = styled.input`
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  accent-color: auto;
+`;

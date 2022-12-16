@@ -66,6 +66,7 @@ const ContactButton = ({ formValues, setFormErrors }) => {
   // STEP 4: Method to send form data to server
   const sendMessage = () => {
     let body = {
+      type: `${formValues.contact}`,
       message: `${formValues.message}`,
       firstName: `${formValues.firstName}`,
       lastName: `${formValues.lastName}`,

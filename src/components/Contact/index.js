@@ -15,6 +15,7 @@ import {
   ContactMessage,
   ContactChars,
   ContactError,
+  ContactRadio,
 } from "./contactElements";
 
 const Contact = () => {
@@ -25,9 +26,11 @@ const Contact = () => {
     lastName: "",
     email: "",
     phone: "",
+    contact: "New Client Inquiry",
   };
   const [formValues, setFormValues] = useState(formDefault);
   const [formErrors, setFormErrors] = useState([]);
+  const [isChecked, setIsChecked] = useState(true);
 
   //Updates textArea Height to allow for vertical scaling of text area
   useEffect(() => {
@@ -45,6 +48,13 @@ const Contact = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
+  // Toggle between contact and review radio options
+  const handleRadioToggle = () => {
+    setIsChecked(isChecked => !isChecked);
+    let current = formValues.contact === "New Client Inquiry" ? "Review" : "New Client Inquiry";
+    setFormValues({ ...formValues, contact: current });
+  }
+
   return (
     <>
       <ContactContainer id="contact">
@@ -56,6 +66,25 @@ const Contact = () => {
           </ContactWrapper>
           <ContactWrapper>
             <ContactForm>
+              <div style={{textAlign: "center"}}>
+              <ContactLabel>Contact</ContactLabel>
+              {/* TODO create styled input option for radio button */}
+              <ContactRadio
+                id="contact"
+                type="radio"
+                aria-label="contact option"
+                checked={isChecked}
+                onClick={() => handleRadioToggle()}
+              />
+              <ContactLabel>Review</ContactLabel>
+              <ContactRadio
+                id="review"
+                type="radio"
+                aria-label="review option"
+                checked={!isChecked}
+                onClick={() => handleRadioToggle()}
+              />
+              </div>
               <ContactLabel>First Name</ContactLabel>
               <ContactInput
                 type="text"

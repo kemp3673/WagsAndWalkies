@@ -16,11 +16,11 @@ const sendEmail = (req, res) => {
     host: "smtp.gmail.com",
   });
 
-  const { firstName, lastName, phone, email, message } = req.body;
+  const { firstName, lastName, phone, email, message, type } = req.body;
   const mailOptions = {
     from: email,
     to: process.env.EMAIL,
-    subject: `New Client Inquiry from ${firstName} ${lastName}`,
+    subject: `${type} from ${firstName} ${lastName}`,
     text: `${message} \n \n Sent from ${firstName} ${lastName} \n Phone: ${phone} \n Email: ${email}`,
   };
   transporter.sendMail(mailOptions, (err, data) => {
