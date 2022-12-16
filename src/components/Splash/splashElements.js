@@ -39,7 +39,7 @@ export const SplashContent = styled.div`
 
 export const Bg = styled.img`
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   max-height: 25%;
   position: absolute;
   margin-bottom: -10px;

@@ -7,7 +7,8 @@ export const Nav = styled.nav`
   box-shadow: 0 0 25px 0 black;
   backdrop-filter: blur(5px);
   height: 50px;
-  width: 100vw;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
