@@ -70,7 +70,7 @@ const Contact = () => {
               <ContactLabel>Contact</ContactLabel>
               {/* TODO create styled input option for radio button */}
               <ContactRadio
-                id="contact"
+                id="contact option"
                 type="radio"
                 aria-label="contact option"
                 checked={isChecked}
@@ -78,7 +78,7 @@ const Contact = () => {
               />
               <ContactLabel>Review</ContactLabel>
               <ContactRadio
-                id="review"
+                id="review option"
                 type="radio"
                 aria-label="review option"
                 checked={!isChecked}

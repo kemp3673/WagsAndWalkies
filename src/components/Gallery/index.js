@@ -54,7 +54,7 @@ const Gallery = ({ modalIsOpen, setModalIsOpen }) => {
 
   return (
     <>
-      <GalleryReturnContainer>
+      <GalleryReturnContainer id="gallery">
         <GalleryReturnWrapper>
           <GalleryReturnBtn
             to="/"
