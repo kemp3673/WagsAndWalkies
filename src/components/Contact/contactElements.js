@@ -10,6 +10,7 @@ export const ContactContainer = styled.div`
   position: relative;
   z-index: 3;
   padding: 20px;
+  overflow-x: hidden;
   :before {
     content: " ";
     left: 0;

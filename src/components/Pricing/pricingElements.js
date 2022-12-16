@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const PricingContainer = styled.div`
   align-items: center;
   min-height: 50vh;
+  height: fit-content;
   position: relative;
   z-index: 3;
   padding-bottom: 0;
+  overflow-x: clip;
   :before {
     content: "";
     position: absolute;

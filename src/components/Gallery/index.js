@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Images } from "./imageData.js";
 import { IoCloseSharp } from "react-icons/io5";
 import {
@@ -6,7 +6,7 @@ import {
   GalleryWrapper,
   GalleryCard,
   GalleryImg,
-  GalleryModal,
+  GalleryModalWrapper,
   GalleryCloseBtn,
   GalleryModalImg,
   GalleryReturnBtn,
@@ -17,6 +17,29 @@ import {
 } from "./galleryElements";
 
 const Gallery = ({ modalIsOpen, setModalIsOpen }) => {
+  // Ref to hold modal element
+  let ref = useRef();
+  // Handle click outside of modal
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setModalIsOpen(false);
+      }
+    };
+    window.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      window.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [setModalIsOpen]);
+  // Prevent vertical scroll when sidebar is open
+  useEffect(() => {
+    if (modalIsOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+}, [modalIsOpen]);
+
   // State to hold image to be displayed in modal
   const [image, setImage] = useState("");
   // Toggle modal and sets image to be displayed
@@ -27,37 +50,34 @@ const Gallery = ({ modalIsOpen, setModalIsOpen }) => {
 
   return (
     <>
-    <GalleryReturnContainer>
+      <GalleryReturnContainer>
         <GalleryReturnWrapper>
-        <GalleryReturnBtn
-          to="/"
-          smooth={true}
-          spy={true}
-          duration={500}
-          exact="true"
-        >
-          <GalleryReturnIcon/>
-          <GalleryReturnTitle>Return Home</GalleryReturnTitle>
-        </GalleryReturnBtn>
+          <GalleryReturnBtn
+            to="/"
+            smooth={true}
+            spy={true}
+            duration={500}
+            exact="true"
+          >
+            <GalleryReturnIcon />
+            <GalleryReturnTitle>Return Home</GalleryReturnTitle>
+          </GalleryReturnBtn>
         </GalleryReturnWrapper>
-        </GalleryReturnContainer>
+      </GalleryReturnContainer>
       <GalleryContainer>
-        <GalleryModal
-          modalIsOpen={modalIsOpen}
-          setModalIsOpen={setModalIsOpen}
-          image={image}
-        >
-          <GalleryCloseBtn>
-            <IoCloseSharp
-              color="white"
-              fontSize="1.5em"
-              size={30}
-              onClick={() => setModalIsOpen(false)}
-            />
-          </GalleryCloseBtn>
-          <GalleryModalImg src={image.imgSrc} alt={image.imgAlt} />
-        </GalleryModal>
-        {/* <GalleryTitle>Our Satisfied Clients</GalleryTitle> */}
+          <GalleryModalWrapper
+            modalIsOpen={modalIsOpen}
+          >
+            <GalleryCloseBtn>
+              <IoCloseSharp
+                color="white"
+                fontSize="1.5em"
+                size={30}
+                onClick={() => setModalIsOpen(false)}
+              />
+            </GalleryCloseBtn>
+            <GalleryModalImg src={image.imgSrc} alt={image.imgAlt} ref={ref} />
+          </GalleryModalWrapper>
         <GalleryWrapper>
           {Images.map((image) => {
             return (

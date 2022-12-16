@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   SideBarContainer,
   SideBarWrapper,
@@ -9,6 +9,31 @@ import {
 import PawPrint from "../../images/icons/paw_icon.png";
 
 const SideBar = ({ isOpen, toggle }) => {
+
+  // Ref to hold modal element
+  let ref = useRef();
+  // Handle click outside of modal
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        toggle(false);
+      }
+    };
+    window.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      window.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [toggle]);
+
+  // Prevent vertical scroll when sidebar is open
+  useEffect(() => {
+      if (isOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'unset';
+      }
+  }, [isOpen]);
+
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -24,8 +49,8 @@ const SideBar = ({ isOpen, toggle }) => {
   };
 
   return (
-    <SideBarContainer id="sidebar" isOpen={isOpen} onClick={toggle}>
-      <SideBarWrapper>
+    <SideBarContainer id="sidebar" isOpen={isOpen}>
+      <SideBarWrapper ref={ref}>
         <img
           src={PawPrint}
           alt="Paw Print"

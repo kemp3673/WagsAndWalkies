@@ -4,6 +4,7 @@
   padding: 0;
 }
 
-html,body{
+body{
   overflow-x: clip;
+  /* overflow-y: clip;  ADD THIS TO MODALS FOR DISABLING SCROLL WHEN OPEN*/
 }

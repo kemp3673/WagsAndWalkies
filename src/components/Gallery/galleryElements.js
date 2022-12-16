@@ -58,7 +58,7 @@ export const GalleryImg = styled(LazyLoadImage)`
   height: auto;
 `;
 
-export const GalleryModal = styled.div`
+export const GalleryModalWrapper = styled.div`
   display: ${({ modalIsOpen }) => (modalIsOpen ? 'flex' : 'none')};
   flex-direction: column;
   position: fixed;
@@ -71,6 +71,7 @@ export const GalleryModal = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
+
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.3s ease-in-out;
@@ -94,7 +95,7 @@ export const GalleryModalImg = styled.img`
   height: auto;
   max-height: 90%;
   margin: 0 auto;
-  display: block;
+  display: flex;
 `;
 
 export const GalleryReturnBtn = styled(LinkR)`
@@ -120,7 +121,6 @@ export const GalleryReturnIcon = styled(Icon)`
   padding-bottom: 2px;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-    padding-bottom: 1px;
   }
 `;
 
@@ -141,7 +141,6 @@ export const GalleryReturnContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 0 20px;
   height: 50px;
   background: rgba(193, 216, 214, 0.8);
