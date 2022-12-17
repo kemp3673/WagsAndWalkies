@@ -30,7 +30,6 @@ const Home = () => {
 
   // Prevent vertical scroll when sidebar is open
   useEffect(() => {
-    console.log(isOpen);
       if (isOpen) {
         document.body.style.overflow = 'hidden';
       } else {

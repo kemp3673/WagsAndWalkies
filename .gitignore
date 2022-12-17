@@ -2,7 +2,7 @@
 .env
 .pem
 main.js
-resume.pem
+*.pem
 
 
 # dependencies

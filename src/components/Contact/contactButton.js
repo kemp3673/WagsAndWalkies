@@ -82,13 +82,13 @@ const ContactButton = ({ formValues, setFormErrors }) => {
   };
 
   return (
-    <>
+    <div style={{textAlign: "center"}}>
       {/* Display Current button based on activity */}
       {currentButton}
       {mailError ? (
         <ContactError>There was a problem sending your message</ContactError>
       ) : null}
-    </>
+    </div>
   );
 };
 

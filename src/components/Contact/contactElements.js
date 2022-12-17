@@ -210,10 +210,9 @@ export const SendingImg = styled.img`
 
 export const ContactError = styled.p`
   padding: 2px;
-  margin-top: -10px;
+  margin-top: 10px;
   color: red;
   font-size: 16px;
-  width: 80%;
   text-align: center;
 
   @media screen and (max-width: 768px) {

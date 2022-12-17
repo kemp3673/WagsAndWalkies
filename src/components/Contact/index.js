@@ -69,6 +69,7 @@ const Contact = () => {
               <div style={{textAlign: "center"}}>
               <ContactLabel>Contact</ContactLabel>
               {/* TODO create styled input option for radio button */}
+              {/* TODO change from onClick to onChange */}
               <ContactRadio
                 id="contact option"
                 type="radio"
