@@ -46,6 +46,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
+    console.log(formValues.attachment);
   };
 
   // Toggle between contact and review radio options

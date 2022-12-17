@@ -19,6 +19,7 @@ const sendEmail = (req, res) => {
   const { firstName, lastName, phone, email, message, type } = req.body;
   const mailOptions = {
     from: email,
+    replyto: email,
     to: process.env.EMAIL,
     subject: `${type} from ${firstName} ${lastName}`,
     text: `${message} \n \n Sent from ${firstName} ${lastName} \n Phone: ${phone} \n Email: ${email}`,

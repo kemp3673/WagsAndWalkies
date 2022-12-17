@@ -67,26 +67,26 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        {/* <div>
+        <div>
           <img src={Maggie} alt="Maggie Testimonial" />
           <div className="myCarousel">
             <h3>Jessica</h3>
             <h4>Maggie's Mom</h4>
             <p>
-            Heckin good boys you are doing me a frighten long water shoob dat tungg tho mlem, fluffer very hand that feed shibe big ol pupper. Clouds fluffer borkdrive smol, many pats. Lotsa pats big ol pupper yapper shooberino pats, length boy dat tungg tho doing me a frighten. Adorable doggo doggorino dat tungg tho, long bois. Dat tungg tho shibe wow very biscit waggy.
+            Michaela is the best! She is so thoughtful, sweet, diligent, and professional. She is so flexible with whatever you need and has the best communication. She takes the time to get to know your dog and always provides the best care. I always know Maggie is in great hands while I am at work. I could not recommend her enough!
             </p>
           </div>
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <img src={Brownie} alt="Brownie Testimonial" />
           <div className="myCarousel">
             <h3>Nyya</h3>
             <h4>Brownie's Mom</h4>
             <p>
-            What a nice floof you are doing me a frighten very good spot pupper much ruin diet very good spot, what a nice floof thicc sub woofer blop. Blep blop borking doggo noodle horse, you are doing me the shock big ol pupper.
+            Michaela is the absolute best! We had just gotten our puppy Brownie, a few weeks before my family and I went back home to visit our family. She made us feel so at ease with leaving him. During our time away Michaela sent us photos of Brownie having fun which was really nice. She's a true animal lover and, I would recommend her services to anyone with pets! Thanks Michaela!
             </p>
           </div>
-        </div> */}
+        </div>
         {/* <div>
           <img src={Cecil} alt="Cecil Testimonial" />
           <div className="myCarousel">
