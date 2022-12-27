@@ -44,12 +44,12 @@ const Pricing = () => {
               <PricingP>Nails - $10</PricingP>
             </PricingListItem>
             <PricingListItem data-aos="fade-left">
-              <PricingTitle>Feeding Drop-Ins</PricingTitle>
-              <PricingP>Feed/Water - $15/visit</PricingP>
+              <PricingTitle>Dog Drop-Ins</PricingTitle>
+              <PricingP>Feed/Water/Walk - $15/visit</PricingP>
             </PricingListItem>
             <PricingListItem data-aos="fade-left">
-              <PricingTitle>Home Drop-Ins</PricingTitle>
-              <PricingP>Visit - $15/visit</PricingP>
+              <PricingTitle>Cat Drop-Ins</PricingTitle>
+              <PricingP>Feed/Water/Litter - $10/visit</PricingP>
             </PricingListItem>
             <PricingListItem data-aos="fade-left">
               <PricingTitle>Training</PricingTitle>
