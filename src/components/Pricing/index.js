@@ -45,11 +45,11 @@ const Pricing = () => {
             </PricingListItem>
             <PricingListItem data-aos="fade-left">
               <PricingTitle>Feeding Drop-Ins</PricingTitle>
-              <PricingP>Feed/Water - $10/visit</PricingP>
+              <PricingP>Feed/Water - $15/visit</PricingP>
             </PricingListItem>
             <PricingListItem data-aos="fade-left">
               <PricingTitle>Home Drop-Ins</PricingTitle>
-              <PricingP>Visit - $10/visit</PricingP>
+              <PricingP>Visit - $15/visit</PricingP>
             </PricingListItem>
             <PricingListItem data-aos="fade-left">
               <PricingTitle>Training</PricingTitle>
