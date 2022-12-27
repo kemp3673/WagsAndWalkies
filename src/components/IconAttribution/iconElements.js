@@ -10,7 +10,7 @@ export const AttributionModalContainer = styled.div`
   justify-content: right;
   top: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow: hidden;
   display: ${({ showModal }) => (showModal ? 'grid' : 'none')};
 
   @media screen and (max-width: 768px) {
