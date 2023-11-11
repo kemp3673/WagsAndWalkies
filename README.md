@@ -103,11 +103,11 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Contact
 
 <div id="badges" align="center">
-  <a href="https://www.linkedin.com/in/nicholas-kempkes/">
+  <a href="https://www.wagsandwalkies.dog">
     <img src="https://cdn-icons-png.flaticon.com/512/1581/1581645.png" alt="Site Logo" width="100"/>
        <!--   Created by Freepik from flaticon.com   -->
   <br></br>
-  <a href="https://github.com/kemp3673/WagsAndWalkies/">
+  <a href="https://www.linkedin.com/in/nicholas-kempkes/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <p>Check out out my linkedIn if you want to learn more about me, or check out my <a href="https://www.nicholaskempkes.com">Portfolio</a></p>
